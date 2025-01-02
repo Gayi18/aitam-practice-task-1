@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #64575e;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .card {
+        width: 280px;
+        background-color: rgba(226, 220, 220, 0.923);
+        border: 1px solid #f1dbdb;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        height: 70%;
+        border-radius: 3px;
+      }
+
+      
+      .card p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      @media (max-width: 768px) {
+        .card-container {
+          justify-content: flex-start;
+        }
+        .card {
+          width: 45%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.IOl3c3ftSdENhKl60w33FAHaJ4&pid=Api&P=0&h=220" alt="Card 1" />
+        <h3>majali</h3>
+        <p>Poorna, a promising cricketer, loses his love, Anshu, due to family pressure. Devastated, he descends into alcoholism and neglects his marriage to Sravani.</p>
+      </div>
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.hZzwfIhjnxuq-RB2ApZJZQHaD_&pid=Api&P=0&h=220" alt="Card 2" />
+        <h3>OH BABY</h3>
+        <p>A 70-year-old woman magically transforms into her 24-year-old self, allowing her to relive her youth and mend broken relationships with her family.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.indianexpress.com/2020/02/jaanu-review-759.jpg?resize=728" alt="Card 3" />
+        <h3>JAANU</h3>
+        <p>Jaanu and Aditya loved each other but had to separate. Many years later, they meet again. They must now choose if they want to try love again or leave the past behind</p>
+      </div>
+      <div class="card">
+        <img src="https://static.toiimg.com/photo/61983876.cms" alt="Card 4" />
+        <h3>ABHIMANYADU</h3>
+        <p>Abhimanyu, wrongfully imprisoned, fights for his innocence and exposes the corrupt system while navigating prison life.</p>
+      </div>
+    </div>
+  </body>
+</html>
